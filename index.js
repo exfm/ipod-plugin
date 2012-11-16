@@ -7,21 +7,21 @@
 
 
 // constructor
-function iPodPlugin(){
-    console.log('iPodPlugin installed');
+function IPodPlugin(){
+    console.log('IPodPlugin installed');
 }
 
 // get songs
-iPodPlugin.prototype.getSongs = function(callback){
+IPodPlugin.prototype.getSongs = function(callback){
     cordovaRef.exec(callback, null, "iPodPlugin", "songs", []);
 };
 
 
 if(typeof module !== "undefined"){
-    module.exports = iPodPlugin;
+    module.exports = IPodPlugin;
 }
 else{
-    window.iPodPlugin = iPodPlugin;
+    window.IPodPlugin = IPodPlugin;
 }
 
 }()); // end wrapper
