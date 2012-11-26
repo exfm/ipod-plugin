@@ -5,6 +5,7 @@
 
 (function(){
 
+var cordovaRef = window.PhoneGap || window.Cordova || window.cordova;
 
 // constructor
 function IPodPlugin(){
